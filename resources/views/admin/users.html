@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {{> sections/head}}
+  </head>
+  <body>
+    {{> sections/header}}
+    <div id="main">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="punchline">Manage Users</h1>
+        </div>      
+<!--         <div class="lecturer-details row">
+          <div class="col-sm-6 col-lg-8">
+            <div class="description">Manage users</div>
+          </div>
+        </div>
+        <h2 class="lecturer-courses">Users</h2> -->
+        {{=<% %>=}}
+        <div id="users" class="row">
+          <div class="col-sm-12">
+            <table class="table table-striped">
+                <thead class="thead-inverse">
+                  <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Account</th>
+                    <th>User Role</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="user in users">
+                    <td>{{user.id}}</td>
+                    <td>{{user.username}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.first_name}}</td>
+                    <td>{{user.last_name}}</td>
+                    <td>{{user.state}}</td>
+                    <td>{{user.role && user.role.name}}</td>
+                    <td><a href="#" data-action="edit-user" v-bind:data-user="user.id" class="icon-edit" v-on:click="editUserModal">Edit</a></td>
+                    <td><a href="#" data-action="remove-user" v-bind:data-user="user.id" class="icon-remove" v-on:click="deleteUserModal">Delete</a></td>
+                  </tr>                
+                <!-- {{/users}} -->
+                </tbody>
+            </table>
+            
+            <!-- Modal -->
+            
+            <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="delete-modal-title" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="delete-modal-title">Confirm action</h4>
+                  </div>
+                  <div class="modal-body">
+                    Delete user <strong>{{user.username}}</strong>?
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-alert" v-on:click="deleteUser">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="edit-modal" tabindex="-1" role="dialog" aria-labelledby="edit-modal-title" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="edit-modal-title">Edit user</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form action="edit" id="edit-user-form">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Name</th>
+                            <th>State</th>
+                            <th>User Role</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>{{user.id}}</td>
+                            <td>{{user.username}}</td>
+                            <td>{{user.email}}</td>
+                            <td>{{user.first_name}} {{user.last_name}}</td>
+                            <td>
+                              <select class="custom-select" name="state" v-model="user_state">
+                                <option v-for="state in states" v-bind:value="state">{{state}}</option>
+                              </select>                                                          
+                            </td>
+                            <td>
+                              <select class="custom-select" name="role" v-model="role">
+                                <option v-for="role in roles" v-bind:value="role.name" v-bind:selected="role.selected">{{role.description}}</option>
+                              </select>                            
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" v-on:click="editUser">Update user</button>
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <%={{ }}=%>            
+          </div>
+        </div>
+      </div>
+    </div>
+    {{> components/csrf}}
+    {{> sections/scripts}}
+    <script type="text/javascript">
+    (function($){
+
+      window.csrf = (function(){
+        var secret;
+        var fetch = function(){
+          var name = $('#csrf-name'),
+              value = $('#csrf-value'),
+              csrf = {};          
+          csrf[name.attr('name')] = name.val();
+          csrf[value.attr('name')] = value.val();
+          return csrf;
+        };
+        var fn = function(data){
+          var csrf = secret || fetch();
+          data = data || {};
+          return $.extend({}, data, csrf);           
+        };
+        fn.set = function(data){
+          var csrf = {};
+          csrf[data.tokenNameKey] = data.tokenName;
+          csrf[data.tokenValueKey] = data.tokenValue;
+          secret = csrf;
+        };
+        return fn;
+      })();
+
+      var vm = new Vue({
+        el: '#users',
+        created: function () {
+          $.ajax({
+            method : "POST",
+            data : csrf(),
+            success : this.updateUsers
+          });
+        },
+        data: {
+          userID : '',
+          users: [],
+          roles : [],
+          states : [],
+          role : null,
+          user_state : null,
+          user : []
+        },
+        methods: {
+          updateUsers : function(data){
+            this.users = data.users;
+            this.states = data.states;
+            this.roles = data.roles;
+            csrf.set(data.csrf);
+          },
+          closeModal : function(modal){
+            var self = this;
+            return function(data){
+              modal.modal('hide');
+              self.updateUsers(data);
+            };
+          },
+          filterUser : function(user){
+            return this.users.filter(function(u){
+              return u.id === user;
+            })[0];
+          },
+          editUserModal : function(e){
+            var user = this.filterUser($(e.target).data('user'));
+            this.user_state = user.state;
+            this.role = user.role.name;
+            this.user = user;
+            $('#edit-modal').modal();
+          },
+          deleteUserModal : function(e){
+            var uid = $(e.target).data('user');
+            var user = this.filterUser(uid)
+            this.user = user;
+            this.userID = uid;
+            $('#delete-modal').modal();
+          },
+          deleteUser : function(e){
+            $.ajax({
+              method : "POST",
+              url :  window.location.pathname + "/delete",
+              data : csrf({userID : this.userID}),
+              success : this.closeModal($('#delete-modal'))
+            });
+          },
+          editUser : function(e){
+            $.ajax({
+              method : "POST",
+              url :  window.location.pathname + "/edit",
+              data : csrf({
+                userID : this.user.id,
+                role : this.role,
+                state : this.user_state
+              }),
+              success : this.closeModal($('#edit-modal'))
+            });
+          }
+        }
+      });
+
+      // $.ajax({
+      //   method : "POST",
+      //   url : window.location.pathname,
+      //   data : csrf(),
+      //   success : function(data){
+      //     vm.users.list = data;
+      //   }
+      // });
+
+      
+      // var deleteUser = function(user){
+      //   $.ajax({
+      //     method : "POST",
+      //     url : window.location.pathname + '/delete',
+      //     data : { 
+      //       'username' : user
+      //     }
+      //   });
+      // };
+
+    })(jQuery)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {{> sections/head}}
+  </head>
+  <body>
+    {{> sections/header}}
+    <div id="courses">
+      <div class="container">
+        <!-- <h2 class="h3">Hello, {{first_name}}</h2> -->
+        <form id="edit-user" action="?" method="POST">
+	      	<div class="section-header">
+		      	<div class="row">
+		      		<div class="col-md-6">
+	      				<h1 class="punchline">User Info: {{username}}</h1>
+	      			</div>
+		        	<div class="col-md-6 text-right">
+		        		<button class="btn btn-primary btn-lg">Update Account</button>
+		        	</div>
+	        	</div>
+	        </div>
+        	<ul class="nav nav-tabs" role="tablist">
+					  <li class="nav-item">
+					    <a class="nav-link active" data-toggle="tab" href="#profile" role="tab">User profile</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" data-toggle="tab" href="#account" role="tab">Account Settings</a>
+					  </li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+					  <div class="tab-pane active" id="profile" role="tabpanel">
+			        <div class="row">
+			          <div class="col-md-3 v-container text-center">
+			          	<div class="v-block">
+				          	<img class="user-image" v-bind:src="image" alt="">
+			          	</div>
+									<div class="v-block">
+										<a href="#" class="btn btn-primary">Upload image</a>
+									</div>
+			            {{=<% %>=}}
+			            <%={{ }}=%>
+			          </div>
+			          <div class="col-md-9"></div>
+			        </div>					  	
+					  </div>
+					  <div class="tab-pane" id="account" role="tabpanel">...</div>
+					</div>
+					{{> components/csrf}}
+        </form>
+      </div>
+    </div>   
+    {{> sections/scripts}}
+   	<script>
+  	(function($){
+    	var $form = $('#edit-user');
+	
+	    var vm = new Vue({
+	    	el: '#edit-user',
+	    	data : {
+	    		imageFile : "{{ image }}"
+	    	},
+	    	computed : {
+        	image : function(){
+          	return this.imageFile ? "{{siteUrl}}uploads/users/" + this.imageFile : "/img/user-default.svg";
+          }
+        }
+      });
+
+    })(jQuery);
+    </script>
+  </body>
+</html>

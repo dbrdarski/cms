@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {{> sections/head}}
+  </head>
+  <body>
+    {{> sections/header}}
+    <div id="courses">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="punchline">Browse our courses...</h1>
+        </div>
+        <div class="row">
+          {{#courses}}
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            {{> components/course}}
+          </div>
+          {{/courses}}
+        </div>
+      </div>
+    </div>   
+    {{> sections/scripts}}
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {{> sections/head}}
+  </head>
+  <body>
+    {{> sections/header}}
+    <div class="section-main">
+      <div class="section-signup container">
+        <div class="page-content">
+          <h1>Get Started</h1>
+          <div class="description">
+            Sign up now and get instant access to 100+ free online courses. 
+          </div>            
+        </div>      
+        <form method="POST" action="?" id="signup" class="sign-box" data-toggle="validator" role="form" novalidate="true">
+        <div class="card">
+          <div class="card-header">
+            Create Account
+          </div>
+          <div class="card-block">
+            <!-- <h4 class="card-title">Sign Up</h4>           -->
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input class="form-control" type="text" name="username" id="username" required data-remote="/signup/v" data-delay="100" data-error="Username has been taken." data-required-error="Field is required." data-pattern-error="Field must be letters." pattern="^[_A-z0-9]{1,}$">
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="grid">
+              <div class="col-1">
+                <div class="form-group">
+                  <label for="first_name">First name</label>
+                  <input class="form-control" type="text" name="first_name" id="first_name" required data-remote="/signup/v" data-delay="100">
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="form-group">
+                  <label for="last_name">Last name</label>
+                  <input class="form-control" type="text" name="last_name" id="last_name" required pattern="^[_A-z]{1,}$">
+                </div>
+              </div>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input class="form-control" type="email" name="email" id="email" required data-remote="/signup/v" data-delay="100" placeholder="your.name@domain.com">
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input class="form-control" type="password" name="password" id="password" data-remote="/signup/v" data-delay="100" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="password-confirm">Confirm</label>
+              <input class="form-control" type="password" name="password-confirm" id="password-confirm" required data-match="#password">
+              <div class="help-block with-errors"></div>
+            </div>
+            {{> components/csrf}}
+            <p class="card-text small">By clicking here you accept our <a href="#">User Agreement</a>.</p>
+            <button type=submit class="btn btn-primary btn-lg">Continue</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    {{> sections/scripts}}
+    <script>
+    $('#form').validator().on('validated.bs.validator', function (e) {
+      console.log('laviiiidated!!!!!!!!!!!!!!');
+    });
+    </script>
+  </body>
+</html>

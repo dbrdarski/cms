@@ -1,0 +1,23 @@
+{
+    "name": "jahmie/slim-mustache-view",
+    "type": "library",
+    "description": "Mustache View package for the Slim Framework",
+    "keywords": ["templating", "view", "slimphp", "mustache"],
+    "homepage": "https://github.com/jahmie/slim-mustache-view",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jamie Telin",
+            "email": "jamie.telin@gmail.com",
+            "homepage": "https://github.com/jahmie/"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.0",
+        "psr/http-message": "^1.0",
+        "mustache/mustache": "^2.11"
+    },
+    "autoload": {
+        "psr-4": { "Slim\\Mustache\\": "source/" }
+    }
+}

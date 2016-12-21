@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {{> sections/head}}
+  </head>
+  <body>
+    {{> sections/header}}
+    <div class="section-main">
+      <div class="section-signup container">
+        <form method="POST" action="?" id="signin" class="sign-box" data-toggle="validator" role="form" novalidate="true">
+        <div class="card">
+          <div class="card-header">
+            Sign in
+          </div>
+          <div class="card-block">
+            <!-- <h4 class="card-title">Sign Up</h4>           -->
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input class="form-control" type="text" name="username" id="username" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input class="form-control" type="password" name="password" id="password" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <p id="message" class="card-text small"></p>           
+            {{> components/csrf}}
+            <!-- <p class="card-text small">By clicking here you accept our <a href="#">User Agreement</a>.</p> -->
+            <button type=submit class="btn btn-primary btn-lg">Sign in</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    {{> sections/scripts}}
+    <script>
+    var $form = $('#signin')
+        $card = $form.children('.card')
+    ;
+
+    $form.on('submit', function (e) {
+      e.preventDefault();
+      $card.removeClass('error');
+      
+      $.ajax({
+        method: "POST",
+        url: window.location.pathname,
+        data: $form.serialize(),
+        success: function(data){
+
+          if(!data.success){
+            $card.addClass('error');
+            $('#username').focus();
+          }
+          
+          if(data.redirect){
+            window.location.pathname = data.redirect;
+          }
+
+          if(data.csrf){
+            $('input[name="'+data.csrf.tokenNameKey+'"]').val(data.csrf.tokenName);
+            $('input[name="'+data.csrf.tokenValueKey+'"]').val(data.csrf.tokenValue);
+          }
+
+          if(data.message){
+            $('#message').text(data.message);
+          }
+        }
+      });
+      return false;
+    });
+    </script>
+  </body>
+</html>

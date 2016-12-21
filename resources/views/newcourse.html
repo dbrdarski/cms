@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {{> sections/head}}
+  </head>
+  <body>
+    {{> sections/header}}
+    <div id="courses">
+      <div class="container">      
+        <div class="section-header">
+          <h1 class="h3 punchline">{{action}} course</h1>
+        </div>
+        <form action="#" action="" method="POST" id="edit-course">
+          <div id="edit-panel">
+            <div id="main-panel">
+              <div class="form-group form-group-title">
+                <input type="hidden" id="course-id" name="id" value="{{id}}">
+                <input type="text" class="form-control form-control-lg" id="title" name="title" aria-describedby="couseTitle" value="{{title}}" placeholder="Title" v-model="title">
+                <small id="couseTitle" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group form-group-title">
+                <input type="text" class="form-control form-control-sm" id="slug" name="slug" v-model="slug" v-on:blur="slugBlur">
+              </div>
+              <div class="form-section-meta">
+                <div class="form-group">
+                  <label for="description">Description</label>
+                  <textarea class="form-control" id="description" name="description" aria-describedby="couseTitle" placeholder="Short description" rows="3" v-model="description"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="level">Pick level</label>
+                  <select class="form-control" name="level" id="level" v-model="level">
+                        {{#levels}}
+                        <option value="{{.}}">{{.}}</option>
+                        {{/levels}}
+                  </select>                  
+                </div>
+                <div class="form-group">
+                  <div class="grid">
+                    <div class="col-1">
+                      <label for="color">Pick color</label>
+                      <select class="form-control" name="color" id="color" v-model="color">
+                        {{#colors}}
+                        <option value="{{.}}">{{.}}</option>
+                        {{/colors}}
+                      </select>
+                    </div>
+                    <div class="col-1">
+                      <label for="image">Image</label>
+                      <input type="text" class="form-control" id="image" name="image" placeholder="Select image" v-model="image">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">                
+                </div>
+              </div>
+              <div class="section-header">
+                <h2 class="h3 punchline">Lessions</h2>
+              </div>
+              {{#id}}
+              <div class="lessions-section">
+                {{^lessions}}Currently there are no lessions{{/lessions}}
+                {{#lessions.0}}
+                <div class="form-group">
+                  <table class="lessions-table table">
+                    <thead class="thead-inverse">
+                      <tr>
+                        <th>Title</th>
+                        <th>Slug</th>
+                        <th>Description</th>
+                        <th>Video</th>
+                        <th>Edit</th>
+                      </tr>
+                    </thead>
+                    <tbody class="tbody-default sortable">
+                      {{#lessions}}
+                      <tr>
+                        <td><span class="table-detail">{{title}}</span></td>
+                        <td><span class="table-detail">{{slug}}</span></td>
+                        <td><span class="table-detail">{{description}}</span></td>
+                        <td><span class="table-detail">{{video}}</span></td>
+                        <td><a href="#" class="edit">Edit</a></td>
+                      </tr>
+                      {{/lessions}}
+                    </tbody>
+                  </table>
+                </div>
+                {{/lessions.0}}
+              </div>
+              {{/id}}
+            </div>
+            <div id="side-panel">
+              <div class="buttons">
+                <input type="submit" class="btn btn-primary btn-alt btn-lg" value="{{saveButton}}">
+                {{#id}}<a href="#" class="btn btn-primary btn-lg" v-on:click="publishCourse" data-action="{{publishAction}}">{{publishButton}}</a>{{/id}}
+              </div>
+              <h2 class="h5 title">Thumbnail preview</h2>
+              {{=<% %>=}}
+              <div id="preview" v-cloak>
+                <div class="course">
+                  <a class="thumb"  href="#" onclick='return false;' bg="{{color}}" v-bind:bg="color">
+                    <div class="thumb-img" bg="{{color}}" v-bind:bg="color" v-bind:style="{'background-image': getImg()}"></div>
+                    <h2 class="name"><span>{{title || titleDefault}}</span></h2>
+                  </a>
+                  <div class="inner">
+                    <ul>
+                      <li class="description">{{description || descDefault}}</li>
+                      <li class="author">by <a href="#">{{author}}</a></li>
+                      <li class="level">Level: {{level}}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <%={{ }}=%>
+            </div>
+          </div>
+          {{> components/csrf}}
+        </form>
+      </div>
+    </div>
+    {{> sections/scripts}}
+  </body>
+  <script>
+  (function($){
+
+    function getCsfrData(data){
+      var name = $('#csrf-name'),
+          value = $('#csrf-value');
+      var data = data || {};
+      data[name.attr('name')] = name.val();
+      data[value.attr('name')] = value.val();
+      return data;
+    }
+    var $form = $('#edit-course');
+
+    var memo = function(fn){
+      var args = Array(fn.length);
+      return function Replace(){
+        var replace = Array.prototype.slice.call(arguments);
+        args = args.concat(replace).slice(replace.length);
+        return fn.apply(null, args);
+      };
+    };
+        // Now the app has started!
+    var makeSlug = function(title){
+      return title.toLowerCase().replace(/[\s-]+/g,'-').replace(/[^\w-]+/g,'').replace(/(^[-]+)|([-]+$)/g, '');
+    }
+
+    // var compare = memo(function(x, y){ return x === y; });
+    var vm = new Vue({
+      el: '#edit-panel',
+      data: {
+        active : "{{active}}" || false,
+        title : "{{title}}",
+        titleDefault : "Sample course",
+        author : '{{users.first_name}} {{users.last_name}}',
+        overrideSlug : false,
+        customSlug : "",
+        description : "{{description}}",
+        descDefault : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        color: "{{color}}" || "default",
+        colors: [{{#colors}}"{{.}}",{{/colors}}],
+        image : "{{image}}",
+        courseURL : '#',
+        level : "{{level}}" || "Beginner"
+      },
+      methods:{
+        getImg : function(image){
+          return 'url(/uploads/courses/' + (this.image || "default.png") + ')';
+        },
+        publishCourse: function(e){
+          e.preventDefault();
+          var el = $(e.target);
+          var action = el.data('action');
+
+          $.ajax({
+            method: "POST",
+            url: window.location.pathname + '/publish',
+            data: getCsfrData({ id : $('#course-id').val(), action : action }),
+            success: function(data){
+              console.log(data);
+              if(data.redirect){
+                window.location.pathname = data.redirect;
+              }
+            }
+          });          
+          return false;
+        },
+        slugBlur : function(e){          
+          this.slug;
+          if(e.target.value === this.autoslug || e.target.value === ''){
+            this.overrideSlug = false;
+          } else {
+            this.overrideSlug = true;
+            this.customSlug = e.target.value;
+          }
+        }
+      },
+      computed:{
+        autoslug : function(){
+          return makeSlug(this.title);
+        },
+        slug : function(e){        
+          this.overrideSlug; this.customSlug;
+          return this.overrideSlug ? makeSlug(this.customSlug) : this.autoslug;
+        },
+        colorIndex : function(){
+          return this.colors.indexOf(this.color);
+        }
+      }
+    });
+    var sortable = document.querySelector('.sortable');
+    sortable = sortable && Sortable.create(sortable, {
+      animation: 150
+    });
+
+    $form.on('submit', function(e){
+      e.preventDefault();
+      $.ajax({
+        method: "POST",
+        url: window.location.pathname,
+        data: $form.serialize(),
+        success: function(data){
+          console.log(data);
+          if(data.redirect){
+            window.location.pathname = data.redirect;
+          }
+        }
+      });
+    });
+  })(jQuery);
+  </script>
+</html>

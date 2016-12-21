@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {{> sections/head}}
+  </head>
+  <body>
+    {{> sections/header}}
+    <div id="courses">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="punchline">Lecturers</h1>
+        </div>
+        {{#lecturers}}
+          <p><a href="{{siteUrl}}lecturers/{{id}}">{{first_name}} {{last_name}}</a></p>
+        {{/lecturers}}
+      </div>
+    </div>   
+    {{> sections/scripts}}
+  </body>
+</html>

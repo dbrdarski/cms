@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {{> sections/head}}
+  </head>
+  <body>
+    {{> sections/header}}
+    <div id="main">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="punchline">Manage Roles</h1>
+        </div>      
+<!--         <div class="lecturer-details row">
+          <div class="col-sm-6 col-lg-8">
+            <div class="description">Manage users</div>
+          </div>
+        </div>
+        <h2 class="lecturer-courses">Users</h2> -->
+        {{=<% %>=}}
+        <div id="roles" class="row">
+          <div class="col-sm-12">
+            <table class="table table-striped">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>ID</th>
+                  <th>Role</th>
+                  <th>Name</th>
+                  <th class="text-center">Edit Permissions</th>
+                  <th class="text-center">Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="role in roles">
+                  <td>{{role.id}}</td>
+                  <td>{{role.name}}</td>
+                  <td>{{role.description}}</td>
+                  <td class="text-center"><a href="#" data-action="edit-user" v-bind:data-role="role.id" class="icon-edit" v-on:click="editRoleModal">Edit</a></td>
+                  <td class="text-center"><a href="#" data-action="remove-user" v-bind:data-role="role.id" class="icon-remove" v-on:click="deleteRoleModal">Delete</a></td>
+                </tr>                
+              </tbody>
+            </table>
+
+            <button class="btn btn-primary" data-toggle="modal" data-target="#new-role-modal">+ Add Role</button>
+
+            
+            <!-- Modal -->
+            
+            <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="delete-modal-title" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="delete-modal-title">Confirm action</h4>
+                  </div>
+                  <div class="modal-body">
+                    Delete role <strong>{{role.description}}</strong>?
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-alert" v-on:click="deleteRole">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="new-role-modal" tabindex="-1" role="dialog" aria-labelledby="new-role-modal-title" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="new-role-modal-title">Add Role</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form action="new" id="add-role-form">
+                        <div class="form-group">
+                          <label for="#name">Role Name</label>
+                          <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                          <label for="#description">Role Description</label>
+                          <input type="text" class="form-control" id="description" name="description">
+                        </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" v-on:click="addNewRole">Add new role</button>
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <div class="modal fade" id="edit-role-modal" tabindex="-1" role="dialog" aria-labelledby="edit-role-modal-title" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="edit-role-modal-title">Manage Permissions</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form action="edit" id="edit-role-form">
+                        <p class="caption">{{role.description}} can:</p>
+                        <input type="hidden" name="roleID" v-bind:value="role.id">
+                        <div class="form-group" v-for="p in permissions">
+                          <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" v-bind:name="p.name" v-model="pData[p.name]">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">{{p.description}}</span>
+                          </label>
+                        </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" v-on:click="editPermissions">Save role</button>
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <%={{ }}=%>            
+          </div>
+        </div>
+      </div>
+    </div>
+    {{> components/csrf}}
+    {{> sections/scripts}}
+    <script type="text/javascript">
+    (function($){
+
+      window.csrf = (function(){
+        var secret;
+        var fetch = function(){
+          var name = $('#csrf-name'),
+              value = $('#csrf-value'),
+              csrf = {};          
+          csrf[name.attr('name')] = name.val();
+          csrf[value.attr('name')] = value.val();
+          return csrf;
+        };
+        var fn = function(data){
+          var csrf = secret || fetch();
+          data = data || {};
+          return $.extend({}, data, csrf);           
+        };
+        fn.set = function(data){
+          var csrf = {};
+          csrf[data.tokenNameKey] = data.tokenName;
+          csrf[data.tokenValueKey] = data.tokenValue;
+          secret = csrf;
+        };
+        return fn;
+      })();
+      var vm = new Vue({
+        el: '#roles',
+        created: function () {
+          $.ajax({
+            method : "POST",
+            data : csrf(),
+            success : this.updateRoles
+          });
+        },
+        data: {
+          userID : '',
+          roles : [],
+          role : {},
+          permissions : [],
+          pData : []
+        },
+        methods: {
+          updateRoles : function(data){
+            this.roles = data.roles;
+            this.permissions = data.permissions;
+            csrf.set(data.csrf);
+          },
+          closeModal : function(modal){
+            var self = this;
+            return function(data){
+              modal.modal('hide');
+              self.updateRoles(data);
+            };
+          },
+          filterRole : function(role){
+            return this.roles.filter(function(r){
+              return r.id === role;
+            })[0];
+          },
+          editRoleModal : function(e){
+            var transform = function(data){
+              return function(value){
+                return function(p){
+                    data[p.name] = value;
+                }
+              }
+            };
+            
+            var uid = $(e.target).data('role'),
+                role = this.filterRole($(e.target).data('role'));
+                var pData = {};
+                fnData = transform(pData);
+                this.permissions.forEach(fnData(false))
+                role.permissions.forEach(fnData(true));
+                this.pData = pData;
+                this.role = role;
+            $('#edit-role-modal').modal();
+          },
+          newRoleModal : function(e){
+            // var role = this.filterRole($(e.target).data('role'));
+            $('#new-role-modal').modal();
+          },
+          deleteRoleModal : function(e){
+            var uid = $(e.target).data('role');
+            var role = this.filterRole(uid)
+            this.role = role;
+            this.roleID = uid;
+            $('#delete-modal').modal();
+          },
+          deleteRole : function(e){
+            $.ajax({
+              method : "POST",
+              url :  window.location.pathname + "/delete",
+              data : csrf({roleID : this.roleID}),
+              success : this.closeModal($('#delete-modal'))
+            });
+          },
+          addNewRole : function(e){
+            var formData = {};
+            $('#add-role-form').serializeArray().forEach(function(x){
+              formData[x.name] = x.value;
+            });
+            $.ajax({
+              method : "POST",
+              url :  window.location.pathname + "/new",
+              data : csrf(formData),
+              success : this.closeModal($('#new-role-modal'))
+            });
+          },
+          editPermissions : function(e){
+            var formData = {};
+            $('#edit-role-form').serializeArray().forEach(function(x){
+              formData[x.name] = x.value;
+            });
+            $.ajax({
+              method : "POST",
+              url :  window.location.pathname + "/edit",
+              data : csrf(formData),
+              success : this.closeModal($('#edit-role-modal'))
+              // 
+            });
+          }
+        }
+      });
+
+      // $.ajax({
+      //   method : "POST",
+      //   url : window.location.pathname,
+      //   data : csrf(),
+      //   success : function(data){
+      //     vm.users.list = data;
+      //   }
+      // });
+
+      
+      // var deleteRole = function(user){
+      //   $.ajax({
+      //     method : "POST",
+      //     url : window.location.pathname + '/delete',
+      //     data : { 
+      //       'username' : user
+      //     }
+      //   });
+      // };
+
+    })(jQuery)
+    </script>
+  </body>
+</html>

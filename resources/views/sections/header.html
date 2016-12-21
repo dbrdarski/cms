@@ -1,0 +1,33 @@
+<header id="header">
+	<div class="container">
+		<div class="row">
+	        <div class="col-sm-3 logo">
+				<a href="/" id="logo"></a>
+			</div>
+	        <div class="col-sm-9 navigation">
+	        	<nav role="navigation">
+	        		<ul class="menu">
+	        			{{#auth.signed}}
+	        			<!-- <li class="nav-item"><a href="#" class="nav-link">Find Course</a></li> -->
+	        			{{#auth.user}}
+	        			<li class="nav-item dropdown">
+	        				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">	{{first_name}} {{last_name}}
+	        				</a>	        			
+	        				<div class="dropdown-menu">
+						      <a class="dropdown-item" href="/user/{{username}}">My Profile</a>
+						      <div class="dropdown-divider"></div>
+						      <a class="dropdown-item" href="/signout">Sign out</a>
+						    </div>
+	        			</li>{{/auth.user}}
+
+	        			{{/auth.signed}}
+	        			{{^auth.signed}}
+	        			<li class="nav-item"><a href="/signin" class="nav-link">Login</a></li>
+	        			<li class="nav-item"><a href="/signup" class="nav-link">Sign up</a></li>
+	        			{{/auth.signed}}
+	        		</ul>
+	        	</nav>
+	        </div>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,1020 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"else",
+				"else if()"
+			],
+			[
+				"e",
+				"every(${0:callback})	Array"
+			],
+			[
+				"fun",
+				"function(){\n	$0\n})();	(function(){\n	$0\n})();"
+			],
+			[
+				"pr",
+				"properties"
+			],
+			[
+				"tab",
+				"tables"
+			],
+			[
+				"outer",
+				"outerHeight	Window"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"mih",
+				"min-height"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"trans",
+				"translateY"
+			],
+			[
+				"ta",
+				"ta-l	text-align: left;"
+			],
+			[
+				"translate",
+				"translateZ"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"class",
+				"className	Element"
+			],
+			[
+				"bg",
+				"background-clip"
+			],
+			[
+				"error",
+				"errorMsg"
+			],
+			[
+				"on",
+				"onSuccess"
+			],
+			[
+				"call",
+				"callbackSuccess"
+			],
+			[
+				"has",
+				"hash	URLUtils"
+			],
+			[
+				"sea",
+				"search-close"
+			],
+			[
+				"res",
+				"res_mobile"
+			],
+			[
+				"clear",
+				"clear-search"
+			],
+			[
+				"sear",
+				"search-close"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"searc",
+				"search-results-title"
+			],
+			[
+				"search-tre",
+				"search-trending-content"
+			],
+			[
+				"grey",
+				"grey_mid_1"
+			],
+			[
+				"breakop",
+				"breakpoint-min"
+			],
+			[
+				"nore",
+				"no-results"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"ligh",
+				"fontstack_light"
+			],
+			[
+				"relate",
+				"related-searches"
+			],
+			[
+				"font",
+				"fontstack_light"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"pagination",
+				"pagination-arrow"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"pag",
+				"pagination-item"
+			],
+			[
+				"rs-",
+				"rs-abstract"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"rs-titl",
+				"search-results-title"
+			],
+			[
+				"reg",
+				"fontstack_regular_bold"
+			],
+			[
+				"fonts",
+				"fontstack_light"
+			],
+			[
+				"gr",
+				"grey_mid_1"
+			],
+			[
+				"marign",
+				"margin-bottom"
+			],
+			[
+				"grey_",
+				"grey_mid_1"
+			],
+			[
+				"gra",
+				"grey_dark"
+			],
+			[
+				"tras",
+				"transtion"
+			],
+			[
+				"active",
+				"search-active"
+			],
+			[
+				"fontst",
+				"fontstack_regular_bold"
+			],
+			[
+				"fon",
+				"fontstack_light"
+			],
+			[
+				"tra",
+				"transtion"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"searcClose",
+				"searchClose"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"stopP",
+				"stopPropagation()	Event"
+			],
+			[
+				"el",
+				"else if()"
+			],
+			[
+				"key",
+				"keydown	Event"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"js-collapse",
+				"js-toggle-collapse"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"query",
+				"query_filter"
+			],
+			[
+				"tour",
+				"tour1"
+			],
+			[
+				"qu",
+				"query_type"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"Gotham",
+				"GothamBlack"
+			],
+			[
+				"arrow",
+				"arrow-up"
+			],
+			[
+				"menu-",
+				"menu-item-active"
+			],
+			[
+				"sub-me",
+				"sub-menu-item"
+			],
+			[
+				"inil",
+				"inline-block"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"form",
+				"form-row"
+			],
+			[
+				"c-input",
+				"c-input-active"
+			],
+			[
+				"marign-",
+				"margin-left"
+			],
+			[
+				"le",
+				"length	String"
+			],
+			[
+				"marig",
+				"margin"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"box-s",
+				"box-shadow"
+			],
+			[
+				"vert",
+				"vertical-gradient"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"marin",
+				"margin-bottom"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"med",
+				"media-up"
+			],
+			[
+				"media",
+				"media-up"
+			],
+			[
+				"ho",
+				"homepage"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"c-",
+				"c-light-gray"
+			],
+			[
+				"media-up",
+				"media-up-to"
+			],
+			[
+				"medi",
+				"media-up-to"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"more-link",
+				"more-link-red"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"mi",
+				"min-height"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"list-sty",
+				"list-style-position"
+			],
+			[
+				"inine",
+				"inline-block"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"slick",
+				"slick-dots"
+			],
+			[
+				"slide",
+				"slide-bullets"
+			],
+			[
+				"testimo",
+				"testimonials-section"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"trasn",
+				"translateY"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"path-arrow",
+				"path-arrow-down"
+			],
+			[
+				"search",
+				"search-icon"
+			],
+			[
+				"transla",
+				"translateY"
+			],
+			[
+				"border-r",
+				"border-bottom-right-radius"
+			],
+			[
+				"border-t",
+				"border-top"
+			],
+			[
+				"bottom",
+				"bottom-rounded-corners"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"file",
+				"file-input-btn"
+			],
+			[
+				"borer-",
+				"border-bottom"
+			],
+			[
+				"round",
+				"right-rounded-corners"
+			],
+			[
+				"botto",
+				"bottom-rounded-corners"
+			],
+			[
+				"path",
+				"path-arrow-right"
+			],
+			[
+				"c-net",
+				"c-neutral"
+			],
+			[
+				"lisy",
+				"list-style-position"
+			],
+			[
+				"c-gray",
+				"c-dark-gray"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 671.0,
+		"history":
+		[
+			"view.options().get('translateTabsToSpaces')",
+			"view.options().set('translateTabsToSpaces', True)",
+			"npm install -g less",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/vendor"
+	],
+	"file_history":
+	[
+		"/C/Users/dbrdarski/Downloads/#archive/slim3auth/app/routes.php",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/faculty-project.sublime-workspace",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/faculty-project.sublime-project",
+		"/C/Users/dbrdarski/Downloads/#archive/slim3auth/bootstrap/app.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/composer.json",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/bootstrap/app.php",
+		"/C/Users/dbrdarski/AppData/Local/Temp/Temp1_slim3auth.zip/bootstrap/app.php",
+		"/C/Users/dbrdarski/Desktop/rtv/js/main.js",
+		"/C/Users/dbrdarski/Desktop/rtv/js/utils.js",
+		"/C/Users/dbrdarski/Desktop/rtv/templates/quality-control.html",
+		"/C/Users/dbrdarski/Desktop/rtv/index.html",
+		"/C/Users/dbrdarski/Desktop/rtv/js/youtube.js",
+		"/C/Users/dbrdarski/Desktop/rtv/css/components/controls.less",
+		"/C/Users/dbrdarski/Desktop/rtv/js/app.js",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/composer.lock",
+		"/C/Users/dbrdarski/Desktop/rtv/main.less",
+		"/C/Users/dbrdarski/Desktop/rtv/js/require.min.js",
+		"/C/Users/dbrdarski/Desktop/rtv/all.less",
+		"/C/Users/dbrdarski/Desktop/rtv/_reset.less",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/bootstrap/app.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Database/Schema/Blueprint.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Database/Schema/TableDefinition.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Database/Schema/Column.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Database/Schema/Table.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/config/config.php",
+		"/C/Users/dbrdarski/Downloads/config.modules.eybbww-templating-module.dialogs.pages.home.bbwwHomeProperties.xml",
+		"/C/Users/dbrdarski/Downloads/config.modules.eybbww-templating-module.dialogs.pages.home.xml",
+		"/C/Users/dbrdarski/Downloads/#archive/config.modules.tricode-site (1).xml",
+		"/C/Users/dbrdarski/.IntelliJIdea11/system/tomcat/Unnamed_eybbww-website_2/work/Catalina/localhost/magnoliaAuthor/loader/templating-kit/pages/section/contentArea.ftl",
+		"/C/Users/dbrdarski/Downloads/config.modules.eybbww-templating-module.templates.components.teasers.advisoryInternalTeaser.xml",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Router/Request.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Router/Response.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Router.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Module/Module.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/App.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Database/Connection.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Database/PDO_Connection.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Database/Schema/Table/Column.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Database/Schema/Table/TableDefinition.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Database/Schema/Table/Table.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Database/Schema/Schema.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/core/Models/User.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/config/default.config.php",
+		"/C/Users/dbrdarski/Desktop/BBWW archive/frontend issues",
+		"/C/Users/dbrdarski/Desktop/Projects/Tricode Website/xml-backup/website.homepage-nl.xml",
+		"/C/Users/dbrdarski/Desktop/BBWW archive/bbww/newGrid.html",
+		"/C/Projects/magnolia-tricode-website/magnolia-tricode-site/src/main/resources/mgnl-bootstrap-samples/tricode-site/website/website.tricode-nl.xml",
+		"/C/Users/dbrdarski/Desktop/BBWW archive/bbww/html2canvas.js",
+		"/C/Users/dbrdarski/Desktop/BBWW archive/bbww/node_modules/html-gl/demo/js/vendor/velocity.js",
+		"/C/Users/dbrdarski/Desktop/BBWW archive/bbww/node_modules/html-gl/demo/js/vendor/html2canvas.js",
+		"/C/Users/dbrdarski/Desktop/BBWW archive/bbww/node_modules/html-gl/dist/htmlgl-effects.js",
+		"/C/Users/dbrdarski/Desktop/html widget/html widget/HtmlWidget.php",
+		"/C/Users/dbrdarski/Desktop/Projects/Tricode Website/slider.js",
+		"/C/Users/dbrdarski/Desktop/bbww/advisory.all.min.js",
+		"/C/xampp/apache/conf/original/extra/httpd-vhosts.conf",
+		"/C/Users/dbrdarski/Desktop/bbww/main.js 23.08.2106",
+		"/C/Users/dbrdarski/Desktop/bbww/newGrid.html",
+		"/C/Users/dbrdarski/Desktop/bbww/style.less",
+		"/C/Users/dbrdarski/Downloads/config.modules (2).xml",
+		"/C/Users/dbrdarski/Downloads/config.modules (1).xml",
+		"/C/Users/dbrdarski/Downloads/config.modules.eybbww-templating-module.dialogs.pages.home (1).xml",
+		"/C/Users/dbrdarski/Downloads/config.modules.eybbww-templating-module.dialogs.pages.category.xml",
+		"/C/Users/dbrdarski/Downloads/config.modules.eybbww-templating-module.templates.pages.advisory.home.xml",
+		"/C/Users/dbrdarski/Downloads/website.advisory.search0.xml",
+		"/C/Users/dbrdarski/Desktop/bbww/search-header.html",
+		"/C/Users/dbrdarski/Desktop/bbww/style.css",
+		"/C/Users/dbrdarski/Downloads/userroles.tricode-editor-role.xml",
+		"/C/xampp/htdocs/cms/index.bak.php",
+		"/C/xampp/htdocs/cms/index.php",
+		"/C/Users/dbrdarski/Desktop/PXL/#css-framework/css/_functions.scss",
+		"/C/Projects/magnolia-tricode-website/magnolia-tricode-website-webapp/target/magnolia-tricode-website-webapp-1.0.18-SNAPSHOT/WEB-INF/bootstrap/common/contacts.mmonroe.thumbnail.xml",
+		"/C/Projects/magnolia-tricode-website/magnolia-tricode-website-webapp/target/magnolia-tricode-website-webapp-1.0.18-SNAPSHOT/WEB-INF/bootstrap/common/contacts.mmonroe.photo.xml",
+		"/C/Users/dbrdarski/Desktop/Projects/slim-vlidation/composer.json",
+		"/C/Users/dbrdarski/Downloads/monet.js-master/src/main/javascript/monet-pimp.js",
+		"/C/Users/dbrdarski/Desktop/Projects/slim-vlidation/app/routes.php",
+		"/C/Users/dbrdarski/Desktop/Projects/slim-vlidation/app/Controllers/Auth/AuthController.php",
+		"/C/Users/dbrdarski/Desktop/Projects/slim-vlidation/app/Middleware/AuthMiddleware.php",
+		"/C/Projects/weclickmedia-eybbww/eybbww-templating-module/src/main/resources/eybbww-templating-module/resources/js/main.js",
+		"/C/Projects/weclickmedia-eybbww/eybbww-templating-module/src/main/resources/eybbww-templating-module/resources/css/layout.scss",
+		"/C/Users/dbrdarski/Desktop/bbww/articleMain.ftl",
+		"/C/Users/dbrdarski/Desktop/bbww/hastag.html",
+		"/C/Users/dbrdarski/Desktop/bbww/caurosel2.html",
+		"/C/Users/dbrdarski/Desktop/bbww/search-result.html",
+		"/C/Users/dbrdarski/Desktop/bbww/grid.html",
+		"/C/Users/dbrdarski/Desktop/bbww/caurosel.html",
+		"/C/Users/dbrdarski/Downloads/config.modules.eybbww-expert-contributors-module.apps.expert-contributors.xml",
+		"/C/Users/dbrdarski/Desktop/bbww/flickety.css",
+		"/C/Users/dbrdarski/Desktop/bbww/flickity.js",
+		"/C/Users/dbrdarski/Desktop/bbww/qwe.js",
+		"/C/Users/dbrdarski/Desktop/bbww/za nikola verzija/xprt.html",
+		"/C/Users/dbrdarski/Desktop/bbww/index.html",
+		"/C/Users/dbrdarski/Desktop/bbww/expertContrib.ftl",
+		"/C/Users/dbrdarski/Desktop/bbww/dropdown.html",
+		"/C/Users/dbrdarski/Desktop/bbww/estimation - BBWW",
+		"/C/Users/dbrdarski/Desktop/bbww/packery.js",
+		"/C/Users/dbrdarski/Desktop/Trash bin/Tricode Foundation/xml/contacts.employees.xml",
+		"/C/Users/dbrdarski/Desktop/Trash bin/xml/!tricode-website/generic/linkToContact.xml",
+		"/C/Users/dbrdarski/Desktop/bbww/gallery-fix/js/main.js",
+		"/C/Users/dbrdarski/Desktop/bbww/twitter-post.html",
+		"/C/Users/dbrdarski/Downloads/expcontribtweets.nikolavasilev.732881897655836672..xml",
+		"/C/Users/dbrdarski/Desktop/twitter-menu-icon.svg",
+		"/C/Users/dbrdarski/Desktop/more-icon.svg",
+		"/C/Users/dbrdarski/Desktop/bbww/style.scss",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/views/step1.html",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/app.js",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/api/index.php",
+		"/C/Users/dbrdarski/Downloads/config.modules.tricode-site.templates.components.structure.pageSection.areas.pageSectionArea.availableComponents.textBox.xml",
+		"/C/Users/dbrdarski/Downloads/config.modules.tricode-site.templates.components.structure.pageSection.areas.pageSectionArea.availableComponents.sectionIntro.xml",
+		"/C/Users/dbrdarski/Downloads/config.modules.tricode-site.templates.components.content.sectionIntro.xml",
+		"/C/Users/dbrdarski/Downloads/config.modules.tricode-site.templates.components.structure.pageSection.areas.pageSectionArea.availableComponents.sectionIntro (1).xml",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/main.js",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/css/main.less",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/views/step2.html",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/routes.js",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/bootstrap.js",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/index.php",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/api/index.php",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/deps/angular.route..min.js",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/deps/angular.min.js",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/deps/sample.js",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/dependencies/sample.js",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/index.html",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/css/bootstrap-theme.min.css",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/npm.js",
+		"/C/Users/dbrdarski/Desktop/Projects/nolet/js/require.js",
+		"/C/Users/dbrdarski/AppData/Local/Temp/Temp1_bootstrap-3.3.6.zip/bootstrap-3.3.6/less/mixins/size.less"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"faculty",
+			"->run",
+			"rtv.example",
+			".rtv.example",
+			"'click",
+			"getPlaybackQuality",
+			"qualitychange",
+			".load",
+			"setquality",
+			"player",
+			"[playerID]",
+			"playaID",
+			"pause",
+			"paseVideo",
+			"selected",
+			".",
+			":",
+			"\n#",
+			"#",
+			"\n#",
+			"#<",
+			"#",
+			"\n",
+			"php.cms",
+			"#Archive\\php-cms",
+			"Projects\\#Archive\\php-cms\\",
+			"P6lB35y7y8E",
+			"../",
+			"../vendor",
+			"getVideoWindowRatio",
+			"window",
+			"ratio",
+			"		  ",
+			"	  ",
+			"  ",
+			"getVideoRatio",
+			"$w",
+			"properties",
+			"$properties",
+			"area*.ftl",
+			"connection",
+			"$db",
+			"count",
+			"$table",
+			"$conn",
+			"SideNavigation",
+			"contactsTeaser",
+			"smallPageTe",
+			"smallPageTeaser",
+			"pageTeaser",
+			"PageTeaser",
+			"pageTeaser",
+			"sectionIntro",
+			"PageHeading",
+			"pageHeading",
+			"horizontalPageTeaser",
+			"Oplossingen",
+			"horizontalPageTeaser",
+			"casesHeading",
+			"advancedPageHeading",
+			"advanced",
+			"contactsHeading",
+			"veenendaal<",
+			"veenen",
+			"veen",
+			"contact<",
+			"contact",
+			"Homepage ",
+			"latestBlogs",
+			"vacancyTeaser",
+			"accordion",
+			"slider",
+			"pricingTables",
+			"tricode-site:components/content/pricingTables",
+			"pricingTables",
+			"columns",
+			"blockgrid",
+			"videoUrl",
+			"tabVideo",
+			"video<",
+			">video",
+			"video",
+			">HTML",
+			"HTML",
+			"tabLink",
+			">link",
+			"link",
+			"SubNavigation",
+			"listChildPages",
+			"LinkedIn",
+			"linkedin",
+			"followUsLinkedIn",
+			"subscribe2newsletter",
+			"downloadForm",
+			"Teaser",
+			"callme",
+			"callMeForm",
+			"Contacts Teaser\n",
+			".",
+			"enter",
+			"hideAfter",
+			"count",
+			"Count",
+			"count",
+			"slick.",
+			"videoDial",
+			"sliderVideosYT",
+			"videos",
+			"videoDialog",
+			"videoFrame",
+			"function(e)",
+			"$",
+			"i",
+			";",
+			"}",
+			"{",
+			"videoFrame.removeClass('active').fadeOut(200);",
+			"video.",
+			"video",
+			"Video",
+			"video",
+			".dialog-overlay .btn",
+			"\\php-cms",
+			"php.cms",
+			"partials",
+			"\\",
+			"on('cli",
+			"YT"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"  ",
+			"'src'",
+			" + ",
+			"function (",
+			" (",
+			"    ",
+			"function ()",
+			", y",
+			") {",
+			"   ",
+			"  ",
+			") {",
+			"updateItem.",
+			"// console.log",
+			"            <h3 class=\"package-title\">Bronze</h3>\n",
+			"\n}",
+			"}\n",
+			"{\n	",
+			";\n	",
+			"\n	\n",
+			";\n",
+			"}\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 142.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/LESS-build/LESS.sublime-build",
+	"project": "faculty-project.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"fu",
+				"C:\\Users\\dbrdarski\\Desktop\\Project 1\\html\\js\\functions.js"
+			],
+			[
+				"index",
+				"C:\\Users\\dbrdarski\\Desktop\\Project 1\\html\\index.html"
+			],
+			[
+				"cont",
+				"C:\\Users\\dbrdarski\\Desktop\\Project 1\\html\\contact.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 147.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
