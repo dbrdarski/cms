@@ -1,0 +1,1233 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cons",
+				"const"
+			],
+			[
+				"path",
+				"pathFor"
+			],
+			[
+				"with",
+				"withJson"
+			],
+			[
+				"course",
+				"course_id"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"has",
+				"hasTable"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"else",
+				"else if()"
+			],
+			[
+				"e",
+				"every(${0:callback})\tArray"
+			],
+			[
+				"pr",
+				"properties"
+			],
+			[
+				"tab",
+				"tables"
+			],
+			[
+				"outer",
+				"outerHeight\tWindow"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"mih",
+				"min-height"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"trans",
+				"translateY"
+			],
+			[
+				"ta",
+				"ta-l\ttext-align: left;"
+			],
+			[
+				"translate",
+				"translateZ"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"class",
+				"className\tElement"
+			],
+			[
+				"bg",
+				"background-clip"
+			],
+			[
+				"error",
+				"errorMsg"
+			],
+			[
+				"on",
+				"onSuccess"
+			],
+			[
+				"call",
+				"callbackSuccess"
+			],
+			[
+				"sea",
+				"search-close"
+			],
+			[
+				"res",
+				"res_mobile"
+			],
+			[
+				"clear",
+				"clear-search"
+			],
+			[
+				"sear",
+				"search-close"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"searc",
+				"search-results-title"
+			],
+			[
+				"search-tre",
+				"search-trending-content"
+			],
+			[
+				"grey",
+				"grey_mid_1"
+			],
+			[
+				"breakop",
+				"breakpoint-min"
+			],
+			[
+				"nore",
+				"no-results"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"ligh",
+				"fontstack_light"
+			],
+			[
+				"relate",
+				"related-searches"
+			],
+			[
+				"font",
+				"fontstack_light"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"pagination",
+				"pagination-arrow"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"pag",
+				"pagination-item"
+			],
+			[
+				"rs-",
+				"rs-abstract"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"rs-titl",
+				"search-results-title"
+			],
+			[
+				"reg",
+				"fontstack_regular_bold"
+			],
+			[
+				"fonts",
+				"fontstack_light"
+			],
+			[
+				"gr",
+				"grey_mid_1"
+			],
+			[
+				"marign",
+				"margin-bottom"
+			],
+			[
+				"grey_",
+				"grey_mid_1"
+			],
+			[
+				"gra",
+				"grey_dark"
+			],
+			[
+				"tras",
+				"transtion"
+			],
+			[
+				"active",
+				"search-active"
+			],
+			[
+				"fontst",
+				"fontstack_regular_bold"
+			],
+			[
+				"fon",
+				"fontstack_light"
+			],
+			[
+				"tra",
+				"transtion"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"searcClose",
+				"searchClose"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"stopP",
+				"stopPropagation()\tEvent"
+			],
+			[
+				"el",
+				"else if()"
+			],
+			[
+				"key",
+				"keydown\tEvent"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"js-collapse",
+				"js-toggle-collapse"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"query",
+				"query_filter"
+			],
+			[
+				"tour",
+				"tour1"
+			],
+			[
+				"qu",
+				"query_type"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"Gotham",
+				"GothamBlack"
+			],
+			[
+				"arrow",
+				"arrow-up"
+			],
+			[
+				"menu-",
+				"menu-item-active"
+			],
+			[
+				"sub-me",
+				"sub-menu-item"
+			],
+			[
+				"inil",
+				"inline-block"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"form",
+				"form-row"
+			],
+			[
+				"c-input",
+				"c-input-active"
+			],
+			[
+				"marign-",
+				"margin-left"
+			],
+			[
+				"le",
+				"length\tString"
+			],
+			[
+				"marig",
+				"margin"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"box-s",
+				"box-shadow"
+			],
+			[
+				"vert",
+				"vertical-gradient"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"marin",
+				"margin-bottom"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"med",
+				"media-up"
+			],
+			[
+				"media",
+				"media-up"
+			],
+			[
+				"ho",
+				"homepage"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"c-",
+				"c-light-gray"
+			],
+			[
+				"media-up",
+				"media-up-to"
+			],
+			[
+				"medi",
+				"media-up-to"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"more-link",
+				"more-link-red"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"mi",
+				"min-height"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"list-sty",
+				"list-style-position"
+			],
+			[
+				"inine",
+				"inline-block"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"slick",
+				"slick-dots"
+			],
+			[
+				"slide",
+				"slide-bullets"
+			],
+			[
+				"testimo",
+				"testimonials-section"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"trasn",
+				"translateY"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"path-arrow",
+				"path-arrow-down"
+			],
+			[
+				"search",
+				"search-icon"
+			],
+			[
+				"transla",
+				"translateY"
+			],
+			[
+				"border-r",
+				"border-bottom-right-radius"
+			],
+			[
+				"border-t",
+				"border-top"
+			],
+			[
+				"bottom",
+				"bottom-rounded-corners"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"file",
+				"file-input-btn"
+			],
+			[
+				"borer-",
+				"border-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/Projects/cms/bootstrap/app.php",
+			"settings":
+			{
+				"buffer_size": 2332,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/cms/core/Wrappers/Module.php",
+			"settings":
+			{
+				"buffer_size": 397,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/cms/core/Wrappers/ASD.php",
+			"settings":
+			{
+				"buffer_size": 422,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 671.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"view.options().get('translateTabsToSpaces')",
+			"view.options().set('translateTabsToSpaces', True)",
+			"npm install -g less",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Projects/cms",
+		"/D/Projects/cms/core",
+		"/D/Projects/cms/core/Wrappers",
+		"/D/Projects/cms/resources/views"
+	],
+	"file_history":
+	[
+		"/D/Projects/cms/core/Wrappers/Check.php",
+		"/D/Projects/cms/core/routes.php",
+		"/D/Projects/cms/core/Install/CoreInstaller.php",
+		"/D/Projects/cms/core/Controllers/HomeController.php",
+		"/D/Projects/cms/resources/views/components/course.html",
+		"/D/Projects/cms/resources/views/terminal.glue",
+		"/D/Projects/cms/core/Controllers/CourseController.php",
+		"/D/Projects/cms/public/index.php",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/D/Projects/cms/bootstrap/app.php",
+		"/D/Projects/cms/core/Wrappers/Nothing.php",
+		"/D/Projects/cms/core/Wrappers/Generic.php",
+		"/D/Projects/cms/core/Wrappers/Something.php",
+		"/D/Projects/cms/core/Authentication/Auth.php",
+		"/D/Projects/stupidClass.js",
+		"/C/Users/dane/Desktop/NG/index.html",
+		"/D/Projects/php-cms/core/Wrappers/Something.php",
+		"/C/Users/dane/Desktop/NG/css/main.scss",
+		"/D/Projects/Frontend Kitchen/functions.js",
+		"/D/Projects/Kiro New Concept/functions.js",
+		"/D/Projects/hellojs/freewall.js",
+		"/D/Projects/Kiro New Concept/style.less",
+		"/D/Projects/php-cms/core/Wrappers/Genric.php",
+		"/D/Projects/php-cms/core/Wrappers/Faliure.php",
+		"/C/Users/dane/AppData/Local/Temp/fz3temp-1/wp-config.php",
+		"/C/Users/dane/AppData/Local/Temp/fz3temp-1/wp-settings.php",
+		"/D/Projects/Kiro New Concept/freewall.min.js",
+		"/D/Projects/hellojs/hello.js",
+		"/D/Projects/hellojs/freewall.min.js",
+		"/D/Projects/Ghost/core/client/node_modules/liquid-tether/node_modules/tether/examples/scroll/index.html",
+		"/D/Projects/faculty-project/resources/views/signin.html",
+		"/D/Projects/faculty-project/bootstrap/app.php",
+		"/D/Projects/faculty-project/core/Models/User.php",
+		"/D/Projects/faculty-project/core/Install/CoreInstaller.php",
+		"/D/Projects/faculty-project/resources/views/signup.html",
+		"/D/Projects/faculty-project/core/Containers/View.php",
+		"/D/Projects/faculty-project/core/Containers/Model.php",
+		"/D/Projects/faculty-project/core/Containers/Environment.php",
+		"/D/Projects/faculty-project/core/Middleware/CsrfMiddleware.php",
+		"/D/Projects/faculty-project/core/Controllers/AuthController.php",
+		"/D/Projects/faculty-project/core/routes.php",
+		"/D/Projects/faculty-project/core/Containers/Json.php",
+		"/D/Projects/faculty-project/core/Controllers/Controller.php",
+		"/D/Projects/faculty-project/core/Containers/Json",
+		"/D/Projects/faculty-project/resources/views/components/csrf.html",
+		"/D/Projects/faculty-project/core/Authentication/Auth.php",
+		"/D/Projects/faculty-project/core/Validation/Rules/MatchesPassword.php",
+		"/C/Users/dane/Desktop/slim3resources/slim3auth/app/Middleware/CsrfViewMiddleware.php",
+		"/D/Projects/faculty-project/core/Controllers/InstallerController.php",
+		"/D/Projects/faculty-project/resources/views/newcourse.html",
+		"/D/Projects/pathfinder/index.html",
+		"/D/Projects/faculty-project/core/Validation/Validator.php",
+		"/D/Projects/php-cms/bootstrap/app.php",
+		"/D/Projects/pathfinder/functions.js",
+		"/C/Users/dane/AppData/Roaming/vlc/lua/extensions/userdata/vlsub/vlsub_conf.xml",
+		"/C/Program Files (x86)/VideoLAN/VLC/lua/extensions/VLSub.luac",
+		"/D/Misc/Card Games/html/card.html",
+		"/D/Projects/faculty-project/core/Models/Course.php",
+		"/D/Projects/faculty-project/resources/views/components/course.html",
+		"/D/Projects/faculty-project/core/Controllers/LessionController.php",
+		"/D/Projects/faculty-project/core/Controllers/CourseController.php",
+		"/D/Projects/rtv/js/utils.js",
+		"/D/Projects/pathfinder/functions.bak.2.js",
+		"/D/Projects/pathfinder/functions .bak",
+		"/D/Projects/containers/js-containers/containers.js",
+		"/D/Projects/nodecms/app.js",
+		"/C/xampp/htdocs/cms/index.php",
+		"/C/xampp/htdocs/cms/2.php",
+		"/D/Projects/faculty-project/resources/views/components/csrf.php",
+		"/D/Projects/faculty-project/core/Middleware/MIddleware.php",
+		"/D/Projects/faculty-project/resources/views/404.html",
+		"/C/Users/dane/Desktop/slim3resources/slim3auth/app/Middleware/Middleware.php",
+		"/C/Users/dane/Desktop/slim3resources/slim3auth/bootstrap/app.php",
+		"/D/Projects/faculty-project/core/Options/OptionManager.php",
+		"/D/Projects/faculty-project/resources/views/course.html",
+		"/D/Projects/faculty-project/public/js/vendor/sortable.min.js",
+		"/D/Projects/nodecms/node_modules/nextjs/index.js",
+		"/C/Users/dane/Desktop/slim3resources/slim3auth/app/Auth/Auth.php",
+		"/C/Users/dane/Desktop/slim3resources/slim3auth/app/Validation/Validator.php",
+		"/C/Users/dane/Desktop/slim3resources/slim3auth/app/Validation/Rules/MatchesPassword.php",
+		"/C/Users/dane/Desktop/slim3resources/slim3auth/app/Validation/Rules/EmailAvailable.php",
+		"/D/Projects/faculty-project/core/Models/Lession.php",
+		"/D/Projects/faculty-project/core/Models/Subscription.php",
+		"/D/Projects/faculty-project/resources/views/index.html",
+		"/D/Projects/faculty-project/public/index.php",
+		"/D/Projects/faculty-project/core/Models/Student.php",
+		"/D/Projects/faculty-project/core/Models/Lecturer.php",
+		"/D/Projects/faculty-project/public/css/main.less",
+		"/D/Projects/rtv/js/app.js",
+		"/D/Projects/rtv/js/player.js",
+		"/D/Projects/rtv/js/main.js",
+		"/D/Projects/faculty-project/config/config.php",
+		"/D/Projects/faculty-project/core/Tasks/Table.php",
+		"/D/Projects/faculty-project/core/Tasks/Task.php",
+		"/D/Projects/faculty-project/core/Tasks/TaskManager.php",
+		"/D/Projects/faculty-project/composer.json",
+		"/D/Projects/php-cms/core/Models/User.php",
+		"/D/Projects/faculty-project/config/setup.php",
+		"/D/Projects/faculty-project/config/config.php.tpl",
+		"/D/Projects/faculty-project/core/Controllers/UninstallerController.php",
+		"/D/Projects/faculty-project/core/Controllers/ReinstallerController.php",
+		"/D/Projects/faculty-project/core/Controllers/UniinstallerController.php",
+		"/D/Projects/faculty-project/resources/templates/setup.html",
+		"/D/Projects/php-cms/config/config.php",
+		"/C/Users/dbrdarski/Downloads/#archive/slim3auth/app/routes.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/core/db/migrations/create_users_table.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/core/db/migrations/create_subjects_table.php",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/app/routes.php",
+		"/C/Users/dbrdarski/Downloads/#archive/slim3auth/bootstrap/app.php",
+		"/C/Users/dbrdarski/Downloads/#archive/slim3auth/composer.json",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/faculty-project.sublime-workspace",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/faculty-project.sublime-project",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/composer.json",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/faculty-project/bootstrap/app.php",
+		"/C/Users/dbrdarski/AppData/Local/Temp/Temp1_slim3auth.zip/bootstrap/app.php",
+		"/C/Users/dbrdarski/Desktop/rtv/js/main.js",
+		"/C/Users/dbrdarski/Desktop/rtv/js/utils.js",
+		"/C/Users/dbrdarski/Desktop/rtv/templates/quality-control.html",
+		"/C/Users/dbrdarski/Desktop/rtv/index.html",
+		"/C/Users/dbrdarski/Desktop/rtv/js/youtube.js",
+		"/C/Users/dbrdarski/Desktop/rtv/css/components/controls.less",
+		"/C/Users/dbrdarski/Desktop/rtv/js/app.js",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/composer.lock",
+		"/C/Users/dbrdarski/Desktop/rtv/main.less",
+		"/C/Users/dbrdarski/Desktop/rtv/js/require.min.js",
+		"/C/Users/dbrdarski/Desktop/rtv/all.less",
+		"/C/Users/dbrdarski/Desktop/rtv/_reset.less",
+		"/C/Users/dbrdarski/Desktop/Projects/#Archive/php-cms/bootstrap/app.php"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\Core\\Wrappers\\ASD",
+			"default",
+			"const",
+			",",
+			"$",
+			"$data",
+			"::class",
+			"self",
+			"Module",
+			"$modules",
+			"v",
+			"Course::",
+			"Course",
+			"user",
+			"font-s",
+			"font-size:",
+			"font-s",
+			"uppercase;",
+			"font-fa",
+			"monts",
+			"-pri",
+			"f0f0f",
+			"Roboto",
+			"Roboto;",
+			"Robo",
+			"f0",
+			"#f0f0f0",
+			"f0f0f0",
+			"@white",
+			"Uppercase",
+			"capitalize",
+			"text-tr",
+			"Merriweather",
+			"merri",
+			"capitalize;",
+			"Raleway",
+			"font-",
+			"text-transform: uppercase;",
+			"Montserrat",
+			"Roboto",
+			"roboto",
+			"Roboto",
+			".sq",
+			"white",
+			"fff",
+			"@blue",
+			"#2c3d4f",
+			"render",
+			".xs-",
+			"<div class=\"content\"></div>",
+			"<div class=\"inner\">",
+			"csfr",
+			"tokenName",
+			"model",
+			"$container",
+			"up",
+			"$auth",
+			"'qwertybanana'",
+			"passwor",
+			"_hash",
+			"has",
+			"passwor",
+			"$password",
+			"hash",
+			"password_has",
+			"MatchesPassword",
+			"password_verify",
+			"signin",
+			"uest",
+			"http1",
+			"htt",
+			".apply",
+			"apply",
+			"function($x){ return \"",
+			"collo",
+			"collection",
+			"id",
+			"yr",
+			"$RAN",
+			"xR",
+			"echo",
+			"range",
+			"f",
+			"<br>:",
+			" . \".\"",
+			"zoom",
+			"{{",
+			"getTokenName",
+			"OptionManager",
+			"OptionsManager",
+			"OptionManager",
+			"cs",
+			"csfr",
+			"view",
+			"this-",
+			"this->view",
+			"app",
+			"auth",
+			"check",
+			"courses",
+			"$query",
+			"$course",
+			"slug",
+			"'slug' =>",
+			"lession",
+			"()",
+			"Course",
+			"slug",
+			"te sakam",
+			"->",
+			"console.log",
+			"updateTime",
+			"memo",
+			"define",
+			"ul",
+			"user_course",
+			"user_co",
+			"$user",
+			"Table",
+			"Lecturer",
+			"this",
+			" ",
+			"\"user",
+			"User",
+			"user",
+			"\"collation",
+			"collation",
+			"Collation"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"  ",
+			"'src'",
+			" + ",
+			"function (",
+			" (",
+			"    ",
+			"function ()",
+			", y",
+			") {",
+			"   ",
+			"  ",
+			") {",
+			"updateItem.",
+			"// console.log",
+			"            <h3 class=\"package-title\">Bronze</h3>\n",
+			"\n}",
+			"}\n",
+			"{\n\t",
+			";\n\t",
+			"\n\t\n",
+			";\n",
+			"}\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/Projects/cms/bootstrap/app.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								345,
+								345
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Projects/cms/core/Wrappers/Module.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Projects/cms/core/Wrappers/ASD.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 422,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								88,
+								88
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 142.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/LESS-build/LESS.sublime-build",
+	"project": "cms.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"check",
+				"core\\Wrappers\\Check.php"
+			],
+			[
+				"routes",
+				"core\\routes.php"
+			],
+			[
+				"app",
+				"bootstrap\\app.php"
+			],
+			[
+				"envor",
+				"core\\Containers\\Environment.php"
+			],
+			[
+				"csrf",
+				"core\\Middleware\\CsrfMiddleware.php"
+			],
+			[
+				"json",
+				"core\\Containers\\Json.php"
+			],
+			[
+				"view",
+				"core\\Containers\\View.php"
+			],
+			[
+				"model",
+				"core\\Containers\\Model.php"
+			],
+			[
+				"signup",
+				"resources\\views\\signup.html"
+			],
+			[
+				"core",
+				"core\\Install\\CoreInstaller.php"
+			],
+			[
+				"corei",
+				"core\\Install\\CoreInstaller.php"
+			],
+			[
+				"install",
+				"core\\Controllers\\InstallerController.php"
+			],
+			[
+				"user",
+				"core\\Models\\User.php"
+			],
+			[
+				"newc",
+				"resources\\views\\newcourse.html"
+			],
+			[
+				"csfr",
+				"resources\\views\\components\\csrf.html"
+			],
+			[
+				"sign",
+				"resources\\views\\signup.html"
+			],
+			[
+				"vi",
+				"core\\Containers\\View.php"
+			],
+			[
+				"option",
+				"core\\Options\\OptionManager.php"
+			],
+			[
+				"corein",
+				"core\\Install\\CoreInstaller.php"
+			],
+			[
+				"course",
+				"resources\\views\\course.html"
+			],
+			[
+				"cours",
+				"resources\\views\\components\\course.html"
+			],
+			[
+				"lession",
+				"core\\Models\\Lession.php"
+			],
+			[
+				"coursecont",
+				"core\\Controllers\\CourseController.php"
+			],
+			[
+				"index",
+				"resources\\views\\index.html"
+			],
+			[
+				"fu",
+				"C:\\Users\\dbrdarski\\Desktop\\Project 1\\html\\js\\functions.js"
+			],
+			[
+				"cont",
+				"C:\\Users\\dbrdarski\\Desktop\\Project 1\\html\\contact.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 320.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
